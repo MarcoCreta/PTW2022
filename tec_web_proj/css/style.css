@@ -1,0 +1,278 @@
+/*TODO
+
+remove tabbar classes
+
+*/
+
+
+body { 
+  background-color: rgb(152, 151, 225, .1);;
+  color : var(--primary-text);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+main {
+  padding: 20px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  height: 5%;
+}
+
+#content-page > .content ,#left-content-page > .content, #right-content-page > .content{
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#content-page > .content ,#left-content-page > .content, #right-content-page > .content{
+  margin-top: 1rem;
+}
+
+.content {
+  background-color: rgb(255, 255, 255);
+}
+
+body.dark .content:not(nav) {
+  box-shadow: none;
+  background-color: rgb(36 37 38);
+  color : rgb(255 255 255);
+}
+
+#left-content-page li a {
+  background: rgba(152, 151, 225, .1);
+  display: block;
+  padding: 1.25rem .938rem;
+  border: 1px solid rgba(80,181,255,.1);
+  border-radius: 5px;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.tab-container .back-button::before {
+  font-style: normal;
+  font-family: "bootstrap-icons";
+  font-size: 1.5rem;
+
+  content : "\F12F";
+}
+
+#new-group, #add-teacher, #new-teaching{
+  background-color: rgb(152, 151, 225, .1);
+  font-size: 2rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+a.button{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: initial;
+
+}
+
+#new-group > button, #add-teacher > button, #new-teaching > a{
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border:none;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
+#groups-list > .group ,#teachings-list > .teaching, .user, .purchase, .search-teaching{
+  background-color: rgb(152, 151, 225, .1);
+}
+
+body.dark #new-group > button, body.dark #add-teacher > button, #new-teaching > a{
+  color:#fff;
+}
+
+
+.group, .teaching {
+  cursor: pointer;
+}
+
+
+/*
+.teaching .h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+.element{
+  background-color: rgb(70, 70, 70);
+}
+*/
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.container-fluid-y {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-profile{
+  object-fit:cover;
+}
+
+.btn-soft-primary{
+  color: #48a3e6;
+  background-color: rgba(80,181,255,.2);
+}
+
+.comment{
+  background-color: rgb(152, 151, 225, .1);
+}
+
+.cart-item button{
+  background-color: none ! important;
+  border: none;
+}
+
+
+#top-tabbar-vertical li a {
+  background: rgba(152, 151, 225, .1);
+  color: #212529;
+  display: block;
+  padding: 1.25rem .938rem;
+  border: 1px solid rgba(80,181,255,.1);
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#top-tabbar-vertical {
+  overflow: hidden;
+}
+
+/*SETTINGS*/
+
+.formset-vertical form[class*='active'], .formset-vertical > div[class*='active']{
+  padding: 16px;
+}
+
+.formset-vertical form .form-group {
+  margin-bottom: 8px;
+}
+
+.formset-vertical > form:not(.active), .formset-vertical > div:not(.active), .hidden{
+  border: none;
+  padding: none;
+  display: none;
+}
+
+.category{
+  background-color: rgba(100, 100, 100, 0.08);
+  border-radius: 5px;
+  margin-bottom: 18px;
+}
+
+button[class*='f-add'] i::before{
+  font-style: normal;
+  font-family: "bootstrap-icons";
+
+  content : "\F4DC";
+}
+button[class*='f-remove'] i::before{
+  font-style: normal;
+  font-family: "bootstrap-icons";
+  content : "\F4DF";
+}
+
+
+button[class*='t-remove'] i::before{
+  font-style: normal;
+  font-family: "bootstrap-icons";
+  content : "\F629";
+}
+
+button[class*='join-group'] i::before{
+  font-style: normal;
+  font-family: "bootstrap-icons";
+
+  content : "\F1BD";
+}
+button[class*='leave-group'] i::before{
+  font-style: normal;
+  font-family: "bootstrap-icons";
+  content : "\F1C3";
+}
+
+/* DARK MODE */
+
+.dark .container {
+  background-color: #18191a;
+}
+
+body input[class*='form-control'], body input[class*='form-control']:focus, .modal-content input{
+  background-color : rgba(220, 237, 253, 0.466) ! important;
+  border : 0px;
+}
+body.dark input[class*='form-control'], body.dark  input[class*='form-control']:focus, .modal-content input{
+  background-color : rgb(58 59 60) ! important;
+  color : #e4e6eb;
+}
+
+body textarea[class*='form-control'], body textarea[class*='form-control']:focus, .modal-content textarea{
+  background-color : rgba(220, 237, 253, 0.466) ! important;
+  border : 0px;
+}
+body.dark textarea[class*='form-control'], body.dark  textarea[class*='form-control']:focus, .modal-content textarea{
+  background-color : rgb(58 59 60) ! important;
+  color : #e4e6eb;
+}
+
+body.dark {
+  background-color: #18191a;
+  color: #e4e6eb ! important;
+}
+
+body.dark .dark > main > body.dark .container ul li a {
+  background-color: #444546 ! important;
+  border : 0px ! important;
+  color : rgb(255 255 255) ! important;
+}
+
+body.dark .post, body.dark #post-form, body.dark .formset-vertical form{
+  background-color: rgb(36 37 38) ! important;
+  color : rgb(255 255 255);
+  border-radius: 5px;
+}
+
+#form-wizard3 .form-card {
+  padding : 16px;
+}
+
+body.dark #top-tabbar-vertical li a ,body.dark .cart-product, body.dark #order-details > div, body.dark .shop-product{
+  background: rgba(152, 151, 225, .1);
+  color: #fff;
+}
+
+.shop-product:hover{
+  cursor: pointer;
+}
+
